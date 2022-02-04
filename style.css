@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(134.34% 134.34% at 50% 0%, #1f3757 0%, #131537 100%);
+    padding: 50px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scoreboard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 20px 50px;
+}
+.score{
+    width: 150px;
+    height: 114px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.score p{
+    color: #2a45c2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 2.5px;
+}
+.score h1{
+    color: #565468;
+    font-size: 56px;
+}
+.hands{
+    background-image: url("asset/triangle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 476px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+.hands img:hover{
+    cursor: pointer;
+    transform: translate3d(0px, -14px, 0px);
+    transition: all ease 0.25s;
+}
+.scissors{
+    margin-left: 30px;
+}
+.paper{
+    margin-right: 30px;
+}
+.rock{
+    margin-top: 30px;
+}
+.contest{
+    width: 900px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.contest h1{
+    margin: 20px 0px;
+    color: white;
+    font-weight: bold;
+}
+.contest img{
+    width: 275px;
+    height: 275px;
+}
+.newGame{
+    background-color: white;
+    border-radius: 25px;
+    padding: 14px 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease 0.25s;
+}
+.newGame:hover{
+    background-color: #eee;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+    transform: translate3d(0px, -6px, 0px);
+}
